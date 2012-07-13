@@ -1,7 +1,7 @@
 <?php
-require ".conf.php"; 
+include "conf.php"; 
 $objData = json_decode(file_get_contents("php://input"));
-$db = new SQLite3("db.db");
+$db = new SQLite3("db/db.db");
 $db->query("CREATE TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY, title TEXT, content TEXT);");
 if($_SERVER['REQUEST_METHOD'] == "POST") {
   if(hash("sha512", hash("sha512",$objData->psw)) == $psw) {
