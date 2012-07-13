@@ -1,0 +1,44 @@
+article { padding: 1em 1em 0 1em; }
+header, #main-content, footer {
+    border: 2px solid #CCC;
+    margin-left: 25%;
+    width: 50%;
+}
+header { height: 5em; }
+.hidden { display: none; }
+hr { width: 60%; }
+h1 {
+    margin-left: 2em;
+    font-size: 2em;
+}
+h2 { 
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align: center;
+}
+h3 {
+    font-size: 1.25em;
+    margin-left: 2em;
+}
+input, textarea, button {
+    border: 1px solid #999;
+    margin: 1em;
+}
+.inputContent {
+    height: 10em;
+    padding: 1em;
+    width: 35em;
+}
+.inputPsw { padding: 0.5em; }
+.inputTitle {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em;
+    padding-left: 0.5em;
+}
+#main-content, footer { margin-top: 1em; }
+.postForm { background-color: #ccc; }
+.submitButton {
+    float: right;
+    padding: 0.25em;
+}
